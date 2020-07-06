@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>org.jetbrains.javafx-demo</id>
+    <idea-version since-build="202.6109"/>
+    <name>JavaFX Runtime Demo</name>
+    <vendor email="yole@jetbrains.com">Dmitry Jemerov</vendor>
+
+    <description>Demonstrates the use of JavaFX through the JavaFX Runtime for Plugins plugin</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.javafx</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="javafx.demo" class="com.jetbrains.demo.JavafxDemo" text="Show JavaFX Demo">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
